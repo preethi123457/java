@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Users\new\Desktop\mphasis\day1\Servers"/>
+			<item value="C:\Users\new\Desktop\mphasis\day1\Agent"/>
+			<item value="C:\Users\new\Desktop\mphasis\day1\css demo\MavenDemo\pom.xml"/>
+			<item value="C:\Users\new\Desktop\mphasis\day1\project day6\src\com\css\day6\wizard.htm"/>
+			<item value="C:\Users\new\Desktop\mphasis"/>
+			<item value="C:\Users\new\Desktop\mphasis\day1\css demo\MavenDemo"/>
+			<item value="C:\Users\new\Desktop\mphasis\day1\css demo"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="All Catalogs"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="mphasis.LibraryProject"/>
+			<item value="mphasis.SessionDemo"/>
+			<item value="mphasis.EmployDashBoard"/>
+			<item value="mphasis.jspnew"/>
+			<item value="mphasis.JspDemos"/>
+		</list>
+		<list key="groupId">
+			<item value="mphasis"/>
+		</list>
+		<list key="artifactId">
+			<item value="LibraryProject"/>
+			<item value="SessionDemo"/>
+			<item value="EmployDashBoard"/>
+			<item value="jspnew"/>
+			<item value="JspDemos"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.wizards.CustomArchetypeDialog">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+</section>

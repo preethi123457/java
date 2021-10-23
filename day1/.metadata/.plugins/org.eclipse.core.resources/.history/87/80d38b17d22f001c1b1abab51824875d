@@ -1,0 +1,30 @@
+package mphasis.Agent;
+
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.Scanner;
+
+public class AgentDelete {
+public static void main(String[] args) throws SQLException {
+int AgentId;
+Scanner sc = new Scanner(System.in);
+System.out.println("Enter AgentId   ");
+AgentId=sc.nextInt();
+try {
+Class.forName("oracle.jdbc.driver.OracleDriver");
+Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe",
+"bhanu", "bhanu");
+String cmd = "delete from AgentExam where AgentId=?";
+PreparedStatement pst = con.prepareStatement(cmd);
+pst.setInt(1, AgentId);
+pst.executeUpdate();
+System.out.println("*** Record Deleted ***");
+} catch (Exception e) {
+// TODO: handle exception
+e.printStackTrace();
+}
+}
+}

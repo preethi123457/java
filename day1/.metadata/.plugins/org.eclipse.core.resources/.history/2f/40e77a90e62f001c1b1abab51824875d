@@ -1,0 +1,34 @@
+package mphasis.Agent;
+
+import java.sql.SQLException;
+import java.util.Scanner;
+
+
+public class UpdateAgentExamMain {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		AgentExam agentexam = new AgentExam();
+		System.out.println("Enter Agent ID  ");
+		agentexam.setAgentid(sc.nextInt());
+		System.out.println("Enter Agent Name   ");
+		agentexam.setName(sc.next());
+		System.out.println("Enter Gender   ");
+		agentexam.setGender(sc.next());
+		System.out.println("Enter City   ");
+		agentexam.setCity(sc.next());
+		System.out.println("Enter Marital Status   ");
+		agentexam.setMaritalstatus(sc.nextInt());
+		System.out.println("Enter Premium  ");
+		agentexam.setPremium(sc.nextInt());
+		AgentExamDAO dao = new AgentExamDAO();
+		
+		try {
+			System.out.println(dao.updateAgent(agentexam));
+		} catch (ClassNotFoundException | SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}
+

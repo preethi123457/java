@@ -1,0 +1,58 @@
+package mphasis.BooksProject;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.sql.SQLException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class SearchBookservlet
+ */
+public class SearchBookservlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public SearchBookservlet() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		int id = Integer.parseInt(request.getParameter("id"));
+		BooksDAO dao = new BooksDAO();
+		PrintWriter out = response.getWriter();
+		try {
+			Books books = dao.searchbooks(id);
+			if (books!=null) {
+				out.println("Book Name  " + books.getName() + "<br/>");
+				out.println("Author " + books.getAuthor() + "<br/>");
+				out.println("Edition  " + books.getEdition() + "<br/>");
+				out.println("Department  " + books.getDept() + "<br/>");
+				out.println("Total Books  " + books.getTotalbooks() + "<br/>");
+				
+			}
+			
+		} catch (ClassNotFoundException | SQLException e) {
+			// TODO Auto-generated catch block
+			((Throwable) e).printStackTrace();
+		}
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		doGet(request, response);
+	}
+
+}
